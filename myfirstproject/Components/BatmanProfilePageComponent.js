@@ -5,7 +5,7 @@ export default BatmanProfilePageComponent = () => {
         <>
             <View style={styles.avatar_container}>
                 <View style={{justifyContent: 'center', alignItems: 'center'}}>
-                    <Image source={require('./assets/batman-avatar.png')}/>
+                    <Image source={require('../assets/batman-avatar.png')}/>
                     <Text style={{maxWidth: 200, marginTop: 10}}>"It's not who I am underneath, but what I do that defines me"</Text>
                 </View>
             </View>
