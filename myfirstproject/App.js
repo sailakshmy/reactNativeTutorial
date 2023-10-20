@@ -7,9 +7,9 @@ import SupermanProfilePageComponent from './Components/SupermanProfilePageCompon
 export default function App() {
   return (
     <View style={styles.container}>
-     {/* <TrialComponent /> */}
+     <TrialComponent />
      {/* <BatmanProfilePageComponent /> */}
-     <SupermanProfilePageComponent/>
+     {/* <SupermanProfilePageComponent/> */}
     </View>
   );
 }
