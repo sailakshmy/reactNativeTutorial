@@ -1,6 +1,6 @@
 import { StyleSheet, Text, TextInput, View, Image } from 'react-native';
 
-export default ProfilePageComponent = () => {
+export default BatmanProfilePageComponent = () => {
     return (
         <>
             <View style={styles.avatar_container}>
