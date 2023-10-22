@@ -3,13 +3,15 @@ import { StyleSheet, View } from 'react-native';
 import TrialComponent from './Components/TrialComponent';
 import BatmanProfilePageComponent from './Components/BatmanProfilePageComponent';
 import SupermanProfilePageComponent from './Components/SupermanProfilePageComponent';
+import DiscountCalculatorComponent from './Components/DiscountCalculatorComponent';
 
 export default function App() {
   return (
     <View style={styles.container}>
-     <TrialComponent />
+     {/* <TrialComponent /> */}
      {/* <BatmanProfilePageComponent /> */}
      {/* <SupermanProfilePageComponent/> */}
+     <DiscountCalculatorComponent />
     </View>
   );
 }
@@ -17,6 +19,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ccc',
+    backgroundColor: 'lightblue',
   }
 });
