@@ -1,9 +1,10 @@
-// import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
 import TrialComponent from './Components/TrialComponent';
 import BatmanProfilePageComponent from './Components/BatmanProfilePageComponent';
 import SupermanProfilePageComponent from './Components/SupermanProfilePageComponent';
 import DiscountCalculatorComponent from './Components/DiscountCalculatorComponent';
+import IconsComponent from './Components/IconsComponent';
 
 export default function App() {
   return (
@@ -11,7 +12,9 @@ export default function App() {
      {/* <TrialComponent /> */}
      {/* <BatmanProfilePageComponent /> */}
      {/* <SupermanProfilePageComponent/> */}
-     <DiscountCalculatorComponent />
+     {/* <DiscountCalculatorComponent /> */}
+     <IconsComponent/>
+     <StatusBar style='auto'/>
     </View>
   );
 }
