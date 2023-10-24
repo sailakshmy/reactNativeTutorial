@@ -5,6 +5,7 @@ import BatmanProfilePageComponent from './Components/BatmanProfilePageComponent'
 import SupermanProfilePageComponent from './Components/SupermanProfilePageComponent';
 import DiscountCalculatorComponent from './Components/DiscountCalculatorComponent';
 import IconsComponent from './Components/IconsComponent';
+import LikeItProjectComponent from './Components/LikeItProject/LikeItProjectComponent';
 
 export default function App() {
   return (
@@ -13,7 +14,8 @@ export default function App() {
      {/* <BatmanProfilePageComponent /> */}
      {/* <SupermanProfilePageComponent/> */}
      {/* <DiscountCalculatorComponent /> */}
-     <IconsComponent/>
+     {/* <IconsComponent/> */}
+     <LikeItProjectComponent />
      <StatusBar style='auto'/>
     </View>
   );
