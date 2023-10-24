@@ -1,17 +1,21 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity, TouchableWithoutFeedback } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 
-const Card = ({image, liked}) => {
+const Card = ({id, image, liked, onClickLike}) => {
   return (
     <View style={styles.card}>
         <View style={{justifyContent:'center', alignItems:'center'}}>
-        <Image source={image} style={styles.cardImage}/>
+          <TouchableWithoutFeedback onLongPress={()=>onClickLike(id)}>
+            <Image source={image} style={styles.cardImage}/>
+          </TouchableWithoutFeedback>
         </View>
       <View style={styles.cardFooter}>
         <Text style={[{flex: 1}, styles.cardActionButtons]}>Comment</Text>
         <Text style={[styles.cardActionButtons, {marginRight:5}]}>Like</Text>
-        <FontAwesome name={liked?'heart':'heart-o'} size={16} color={liked?"red":'black' } />
+        <TouchableOpacity onPress={()=>onClickLike(id)}>
+          <FontAwesome name={liked?'heart':'heart-o'} size={16} color={liked?"red":'black' } />
+        </TouchableOpacity>
       </View>
     </View>
   )

@@ -2,12 +2,12 @@ import React from 'react';
 import {View, StyleSheet, Text} from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 
-const Header = () => {
+const Header = ({likeCounter}) => {
     return (
         <View style={styles.header}>
             <Text style={{ flex: 1, fontSize: 24 }}>Like It</Text>
             <FontAwesome name="heart" size={24} color="red" />
-            <Text style={{ fontSize: 24, marginLeft: 5 }}>0</Text>
+            <Text style={{ fontSize: 24, marginLeft: 5 }}>{likeCounter}</Text>
         </View>
     )
 }
